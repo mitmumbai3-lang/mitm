@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://mitmumbai.edu.in/assets/images/icon/favmitlogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#020816" />
+    <title>MIT TECH KERNEL — Move Ideas &amp; Payments Forward Together</title>
+    <meta name="description" content="Fullscreen Tech Kernel for MIT Mumbai (MAEER's Maharashtra Institute of Technology). Explore autonomous robotics, deep AI labs, prior-art review, project submissions, and engineering programs." />
+    
+    <!-- Google Fonts: Geist & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      @font-face{font-family:"M Display";src:url(assets/fonts/m-display.woff2) format("woff2");font-weight:400;font-display:block}
+      @font-face{font-family:"M Sans";src:url(assets/fonts/m-sans.woff2) format("woff2");font-weight:400;font-display:block}
+      @font-face{font-family:"M Mono";src:url(assets/fonts/m-mono-bold.woff2) format("woff2");font-weight:700;font-display:block}
+
+      :root{
+        --ink-bg:#020816; --glass:rgba(51,52,74,.6); --glass-blur:14px; --navy:rgba(45,56,92,.85);
+        --peach:#f2b380; --cta:#f93f28; --peach-ink:#331200; --white:#ffffff; --display:#f6f8fc;
+        --body:#cfd3e0; --chip:#c9ccd4; --rail:#989eac; --u:1; --vh:100vh; --cap-shift:-0.055em;
+        --f-display:"M Display","ITC Avant Garde Gothic","Avant Garde","URW Gothic","Century Gothic",sans-serif;
+        --f-sans:"M Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        --f-mono:"M Mono","Courier New",Courier,monospace;
+      }
+
+      *,*::before,*::after{box-sizing:border-box}
+      html,body{margin:0; height:100%; background:#020816; color:#fff}
+      html{text-size-adjust:100%}
+      body{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; text-rendering:geometricPrecision}
+      :focus-visible{outline:2px solid #f2b380; outline-offset:3px}
+    </style>
+
+    <script>
+      (function(){
+        var doc = document.documentElement;
+        var u = Math.min(doc.clientWidth / 1280, window.innerHeight / 800);
+        doc.style.setProperty('--u', u);
+        doc.style.setProperty('--vh', window.innerHeight + 'px');
+        doc.classList.add('js');
+      })();
+    </script>
+  </head>
+  <body class="bg-[#020816] text-white selection:bg-white selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
